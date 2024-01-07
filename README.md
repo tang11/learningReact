@@ -1,9 +1,9 @@
 first know some ES6 knowledge (https://www.w3schools.com/react/react_es6.asp)
 1. what's ES6   
    ES6 stands for ECMAScript 6. ECMAScript was created to standardize JavaScrip.
-2.Classes
+2. Classes
     A class is a type of function, but instead of using the keyword function to initiate it, we use the keyword class.
-3.Arrow Functions
+3. Arrow Functions
    before code :
    hello = function() {
      return "Hello World!";

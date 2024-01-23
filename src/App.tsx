@@ -4,8 +4,7 @@ import Count from './component/Count';
 
 function App() {
   return (
-   <Count>
-   </Count>
+  <div>hello</div>
   );
 }
 

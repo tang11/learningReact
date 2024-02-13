@@ -8,7 +8,7 @@ const PeopleList = () => {
       {
         "name":"name",
         label:"name",
-      }, {
+      },{
         "name":"title",
         label:"title",
       },{

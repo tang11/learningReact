@@ -6,19 +6,34 @@ const PeopleList = () => {
   const getColumns = (): MUIDataTableColumnDef[]  => {
     return [
       {
-        "name":"name",
+        name:"name",
         label:"name",
+        options: {
+          filter: true,
+          filterType: 'dropdown'
+        }
       },{
-        "name":"title",
+        name:"title",
         label:"title",
+        options : {
+          filter: true,
+          customFilterListOptions: {
+            render: v => v.toLowerCase()
+          }
+        }
       },{
-        "name":"location",
+        name:"location",
         label:"location",
+        options:{
+          filter: true,
+          display: true,
+          filterType: 'custom',
+        }
       },{
-        "name":"age",
+        name:"age",
         label:"age",
       },{
-        "name":"salary",
+        name:"salary",
         label:"salary",
       }
     ]

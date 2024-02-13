@@ -1,8 +1,33 @@
 import { Breadcrumbs, Card, CardContent, Link, Stack } from "@mui/material";
 import React from "react";
-
+import MUIDataTable, { FilterType, MUIDataTableColumnDef } from 'mui-datatables'
 const PeopleList = () => {
 
+  const getColumns = (): MUIDataTableColumnDef[]  => {
+    return [
+      {
+        "name":"name",
+        label:"name",
+      }, {
+        "name":"title",
+        label:"title",
+      },{
+        "name":"location",
+        label:"location",
+      },{
+        "name":"age",
+        label:"age",
+      },{
+        "name":"salary",
+        label:"salary",
+      }
+    ]
+  }
+  const options = {
+    filter: true,
+    filterType: "dropdown" as FilterType,
+    }
+ 
   const breadcrumbs = [
     <Link underline ="hover" key="1" >
       people
@@ -17,6 +42,7 @@ const PeopleList = () => {
       </Card>
       <Card>
       </Card>
+      <MUIDataTable title = "Employee List" data ={data} columns = {getColumns()} options={options}></MUIDataTable>
     </Stack>
   )
 }

@@ -1,9 +1,10 @@
 import './App.css';
+import PeopleList from './people/people';
 
 
 function App() {
   return (
-  <div>hello</div>
+  <PeopleList />
   );
 }
 

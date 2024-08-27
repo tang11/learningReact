@@ -1,3 +1,10 @@
+how to create a typescript react project?
+
+
+npx create-react-app react-typescrpit-demo --template typescript
+
+
+
 how to convert js project to typescript project
 
 after you use command npx create-react-app my-app to create the project, it's a js project, if you want to convert to tsx file
